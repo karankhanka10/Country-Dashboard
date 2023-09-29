@@ -3,7 +3,7 @@
   grid-template-columns: 1.75fr 5fr;
   width: 100%;
   height: 100vh;
-  background-color: red;
+  background-color: grey;
 }
 
 .dashboard-menu {
@@ -13,6 +13,22 @@
   width: 100%;
   background-color: #f8f9fa;
   padding: 15px 15px;
+  gap: 10px;
+}
+
+.brand-container {
+  display: flex;
+  gap: 10px;
+}
+
+.brand-container img {
+  max-width: 100%;
+}
+
+.brand-container h5 {
+  white-space: nowrap;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
 .btn-dashboard {
@@ -21,22 +37,96 @@
   text-align: center;
   display: flex;
   border: none;
-  filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.25));
-  gap: 7px;
+  gap: 8px;
+  border-radius: 15px;
+}
+
+.btn-dashboard-hover {
+  padding: 10px 20px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  border: none;
+  gap: 8px;
+  border-radius: 15px;
   background-color: white;
-  border-radius: 20px;
+  filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.05));
+}
+
+.btn-dashboard-hover a {
+  color: black;
+  text-decoration: none;
 }
 
 .btn-dashboard-icons {
   display: flex;
   align-items: center;
   padding: 8px 8px;
-  background-color: #4fd1c5;
+  background-color: white;
   border-radius: 30%;
-  color: white;
+  color: #4fd1c5;
+  filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.05));
 }
 
 .btn-dashboard a {
   text-decoration: none;
   color: black;
+}
+
+.need-help-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #4fd1c5;
+  color: white;
+  gap: 5px;
+  border-radius: 10px;
+  background-image: url(/src/assets/lines.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+}
+
+.need-help-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 30%;
+  color: #4fd1c5;
+  filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.05));
+  width: 40px;
+  height: 40px;
+}
+
+.need-help-card h5 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.need-help-card h6 {
+  font-weight: lighter;
+  font-size: 12px;
+  margin-top: -8px;
+  margin-bottom: 5px;
+}
+
+.need-help-card a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.account-pages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
 }
