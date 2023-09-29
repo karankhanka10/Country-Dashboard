@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 import "./Login.css"
 const Login = () => {
@@ -5,7 +6,7 @@ const Login = () => {
     <>
     
        <section className="bg_img">
-        <h1 class="bg_header">Welcome!</h1>
+        <h1 className="bg_header">Welcome!</h1>
         <div className="card">
           <h4 id='card_header'>
               Register with

@@ -17,5 +17,4 @@ const LargeCardChakra = () => {
     </>
   )
 }
-
 export default LargeCardChakra
