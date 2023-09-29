@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.bg_img{
+    position: relative;
+    display: flex;
+    background: url(src/assets/bg-login.png) center/cover;
+    height: 50vh;
+    margin: 2%;
+    border-radius: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bg_header{
+    margin-bottom: 7rem;
+    color: white;
+    font-size: 2.2rem; 
+}
+.card{
+    background-color: white;
+    margin-top: 38%;
+    border: 2px solid black;
+    height: 32rem;
+    width: 23rem;
+    position: absolute;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.439);
+
+}
+
+#card_header{
+        margin-left: 8rem;
+        margin-top: 2rem;
+        font-size: 1.3rem;
+    
+}
+
+#card_Fname{
+    border: 2px solid red;
+    height: 4rem;
+    width: 80%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+#or{
+    margin-left: 50%;
+    margin-top: 1rem;
+    font-size: large;
+    color: gray;
+}

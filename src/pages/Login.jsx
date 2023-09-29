@@ -1,8 +1,28 @@
 import React from 'react'
-
+import "./Login.css"
 const Login = () => {
   return (
-    <div>Login</div>
+    <>
+    
+       <section className="bg_img">
+        <h1 class="bg_header">Welcome!</h1>
+        <div className="card">
+          <h4 id='card_header'>
+              Register with
+          </h4>
+            <div id="card_Fname">
+
+            </div>
+            <h4 id='or'>
+              or
+            </h4>
+        </div>
+       </section>
+       
+       
+    </>
+
+    
   )
 }
 
