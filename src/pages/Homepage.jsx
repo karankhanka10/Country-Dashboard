@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+/* eslint-disable no-unused-vars */
+import React, { useContext, useState } from "react";
 import "./Homepage.css";
+import SmallCard from "../card/SmallCard";
+import LargeCardChakra from "../card/LargeCardChakra";
+import { AppContext } from "../context/Context";
 const Homepage = () => {
   const [hoverOne, setHoverOne] = useState("btn-dashboard");
   const [hoverTwo, setHoverTwo] = useState("btn-dashboard");
   const [hoverThree, setHoverThree] = useState("btn-dashboard");
   const [hoverFour, setHoverFour] = useState("btn-dashboard");
-  // Function to handle mouse enter (hover)
-  const handleMouseEnter = () => {
-    setHover(true);
-  };
 
-  // Function to handle mouse leave (unhover)
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
+  const { data } = useContext(AppContext);
+
+  console.log(data);
+
   return (
     <>
       <div className="dashboard">
@@ -45,7 +45,7 @@ const Homepage = () => {
             className={hoverTwo}
           >
             <div className="btn-dashboard-icons">
-              <i class="ri-tools-fill"></i>
+              <i className="ri-tools-fill"></i>
             </div>
             <a href="http://">Setings</a>
           </div>
@@ -60,7 +60,7 @@ const Homepage = () => {
             className={hoverThree}
           >
             <div className="btn-dashboard-icons">
-              <i class="ri-user-fill"></i>
+              <i className="ri-user-fill"></i>
             </div>
             <a href="http://">Profile</a>
           </div>
@@ -70,7 +70,7 @@ const Homepage = () => {
             className={hoverFour}
           >
             <div className="btn-dashboard-icons">
-              <i class="ri-logout-circle-fill"></i>
+              <i className="ri-logout-circle-fill"></i>
             </div>
             <a href="http://">Sign Out</a>
           </div>
@@ -78,7 +78,7 @@ const Homepage = () => {
           {/* Need Help Section */}
           <div className="need-help-card">
             <div className="need-help-card-btn">
-              <i class="ri-question-fill"></i>
+              <i className="ri-question-fill"></i>
             </div>
             <h5>Need help?</h5>
             <h6>Please check our docs</h6>
@@ -86,7 +86,15 @@ const Homepage = () => {
           </div>
         </div>
 
-        <div className="dashboard-items"></div>
+        <div className="dashboard-items">
+          <div className="row-one">
+            <SmallCard />
+            <SmallCard />
+          </div>
+          <div className="row-two">
+            <LargeCardChakra/>
+          </div>
+        </div>
       </div>
     </>
   );
