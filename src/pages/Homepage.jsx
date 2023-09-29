@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Homepage.css";
-
 const Homepage = () => {
   const [hoverOne, setHoverOne] = useState("btn-dashboard");
   const [hoverTwo, setHoverTwo] = useState("btn-dashboard");
@@ -36,7 +35,7 @@ const Homepage = () => {
             className={hoverOne}
           >
             <div className="btn-dashboard-icons">
-              <i class="ri-home-3-fill"></i>
+              <i className="ri-home-3-fill"></i>
             </div>
             <a href="http://">Dashboard</a>
           </div>
