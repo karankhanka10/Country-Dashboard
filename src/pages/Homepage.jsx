@@ -1,19 +1,18 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Homepage.css";
+import SmallCard from "../card/SmallCard";
+import LargeCardChakra from "../card/LargeCardChakra";
+import { AppContext } from "../context/Context";
 const Homepage = () => {
   const [hoverOne, setHoverOne] = useState("btn-dashboard");
   const [hoverTwo, setHoverTwo] = useState("btn-dashboard");
   const [hoverThree, setHoverThree] = useState("btn-dashboard");
   const [hoverFour, setHoverFour] = useState("btn-dashboard");
-  // Function to handle mouse enter (hover)
-  const handleMouseEnter = () => {
-    setHover(true);
-  };
 
-  // Function to handle mouse leave (unhover)
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
+  const { data } = useContext(AppContext);
+
+  console.log(data);
+
   return (
     <>
       <div className="dashboard">
@@ -86,7 +85,15 @@ const Homepage = () => {
           </div>
         </div>
 
-        <div className="dashboard-items"></div>
+        <div className="dashboard-items">
+          <div
+            style={{ display: "flex", backgroundColor: "red", gap: "10px" }}
+            className="row-one"
+          >
+            <SmallCard />
+            <SmallCard />
+          </div>
+        </div>
       </div>
     </>
   );
