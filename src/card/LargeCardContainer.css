@@ -30,6 +30,8 @@
     font-weight: 300;
 }
 .large-card-chakra-container-image{
+    overflow: hidden;
+    border-radius: 20px;
     height: 100%;
     width: 40%;
 }
