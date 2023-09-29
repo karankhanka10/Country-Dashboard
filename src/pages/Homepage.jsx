@@ -90,6 +90,7 @@ const Homepage = () => {
           <div className="row-one">
             <SmallCard />
             <SmallCard />
+            <SmallCard />
           </div>
           <div className="row-two">
             <LargeCardChakra/>
