@@ -1,0 +1,40 @@
+.large-card-chakra-container{
+    margin: 10%;
+    width: 50rem;
+    display: flex;
+    height: 16rem;
+    overflow: hidden;
+    border-radius: 20px;
+    border : 1px solid black;
+}
+.large-card-chakra-container-info{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    height: 100%;
+    width: 60%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.large-card-chakra-container-info h2{
+    font-size: .8rem;
+    color : #a0aec0;
+}
+.large-card-chakra-container-info h1{
+    font-size: 1.8rem;
+    color : rgb(34, 33, 33);
+}
+.large-card-chakra-container-info p{
+    font-size: 1rem;
+    color : #a0aec0;
+    font-weight: 300;
+}
+.large-card-chakra-container-image{
+    height: 100%;
+    width: 40%;
+}
+.large-card-chakra-container-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

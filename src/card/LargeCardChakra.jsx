@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-
+import "./LargeCardContainer.css"
 const LargeCardChakra = () => {
   return (
     <>
@@ -11,7 +11,7 @@ const LargeCardChakra = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, asperiores?</p>
             </div>
             <div className="large-card-chakra-container-image">
-                <img src="" alt="" />
+                <img src="https://repository-images.githubusercontent.com/202890778/85840180-ec15-11e9-883c-82d28e34babc" alt="" />
             </div>
         </div> 
     </>
