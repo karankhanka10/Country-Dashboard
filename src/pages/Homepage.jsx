@@ -1,6 +1,4 @@
-import React from "react";
 import "./Homepage.css";
-
 const Homepage = () => {
   return (
     <>
@@ -8,7 +6,7 @@ const Homepage = () => {
         <div className="dashboard-menu">
           <div className="btn-dashboard">
             <div className="btn-dashboard-icons">
-              <i class="ri-home-3-fill"></i>
+              <i className="ri-home-3-fill"></i>
             </div>
 
             <a href="http://">Dashboard</a>
