@@ -7,13 +7,19 @@ const Login = () => {
     
        <section className="bg_img">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <h1 className="bg_header">Welcome!</h1>
 =======
+=======
+>>>>>>> ccd47b2e7e48a82a003a5872a46c551123f61467
         <h1 class="bg_header">
           Welcome!
           <p>Use these awesome forms to login or create new account in your project for free.
 </p>
         </h1>
+<<<<<<< HEAD
+>>>>>>> ccd47b2e7e48a82a003a5872a46c551123f61467
+=======
 >>>>>>> ccd47b2e7e48a82a003a5872a46c551123f61467
         <div className="card">
           <h4 id='card_header'>
